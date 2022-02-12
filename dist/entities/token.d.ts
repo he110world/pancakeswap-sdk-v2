@@ -6,7 +6,7 @@ import { Currency } from './currency';
 export declare class Token extends Currency {
     readonly chainId: ChainId;
     readonly address: string;
-    constructor(chainId: ChainId, address: string, decimals: number, symbol?: string, name?: string);
+    constructor(chainId: ChainId, address: any, decimals: number, symbol?: string, name?: string);
     /**
      * Returns true if the two tokens are equivalent, i.e. have the same chainId and address.
      * @param other other token to compare
@@ -27,4 +27,5 @@ export declare function currencyEquals(currencyA: Currency, currencyB: Currency)
 export declare const WETH: {
     56: Token;
     97: Token;
+    31337: Token;
 };

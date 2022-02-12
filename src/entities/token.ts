@@ -10,7 +10,7 @@ export class Token extends Currency {
   public readonly chainId: ChainId
   public readonly address: string
 
-  public constructor(chainId: ChainId, address: string, decimals: number, symbol?: string, name?: string) {
+  public constructor(chainId: ChainId, address: any, decimals: number, symbol?: string, name?: string) {
     super(decimals, symbol, name)
     this.chainId = chainId
     this.address = validateAndParseAddress(address)
@@ -66,9 +66,17 @@ export const WETH = {
   ),
   [ChainId.BSCTESTNET]: new Token(
     ChainId.BSCTESTNET,
-    '0xae13d989dac2f0debff460ac112a837c89baa7cd',
+    process.env.WBNB_BSCTESTNET,
+    18,
+    'WBNB',
+    'Wrapped BNB'
+  ),
+  [ChainId.LOCALNET]: new Token(
+    ChainId.LOCALNET,
+    process.env.WBNB_LOCAL,
     18,
     'WBNB',
     'Wrapped BNB'
   )
+
 }
