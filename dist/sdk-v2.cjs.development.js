@@ -36,8 +36,8 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = process.env.FACTORY_ADDRESS || '';
-var INIT_CODE_HASH = process.env.INIT_CODE_HASH || '';
+var FACTORY_ADDRESS = process.env.REACT_APP_FACTORY_ADDRESS || '';
+var INIT_CODE_HASH = process.env.REACT_APP_INIT_CODE_HASH || '';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -436,7 +436,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.BSCTESTNET] = /*#__PURE__*/new Token(exports.ChainId.BSCTESTNET, process.env.WBNB_BSCTESTNET, 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.LOCALNET] = /*#__PURE__*/new Token(exports.ChainId.LOCALNET, process.env.WBNB_LOCAL, 18, 'WBNB', 'Wrapped BNB'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, process.env.REACT_APP_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.BSCTESTNET] = /*#__PURE__*/new Token(exports.ChainId.BSCTESTNET, process.env.REACT_APP_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.LOCALNET] = /*#__PURE__*/new Token(exports.ChainId.LOCALNET, process.env.REACT_APP_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
