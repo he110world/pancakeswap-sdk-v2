@@ -436,7 +436,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, process.env.REACT_APP_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.BSCTESTNET] = /*#__PURE__*/new Token(exports.ChainId.BSCTESTNET, process.env.REACT_APP_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.LOCALNET] = /*#__PURE__*/new Token(exports.ChainId.LOCALNET, process.env.REACT_APP_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, process.env.REACT_APP_TOKEN_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.BSCTESTNET] = /*#__PURE__*/new Token(exports.ChainId.BSCTESTNET, process.env.REACT_APP_TOKEN_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.LOCALNET] = /*#__PURE__*/new Token(exports.ChainId.LOCALNET, process.env.REACT_APP_TOKEN_WBNB, 18, 'WBNB', 'Wrapped BNB'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
